@@ -1,7 +1,7 @@
 ﻿using System;
 using tabuleiro;
 
-namespace Xadrez.xadrez
+namespace xadrez
 {
     internal class Rei : Peca
     {
