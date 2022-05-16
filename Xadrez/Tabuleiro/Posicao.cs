@@ -1,5 +1,8 @@
-﻿namespace Xadrez.Tabuleiro
-{
+﻿using tabuleiro;
+
+namespace tabuleiro
+{ 
+
     internal class Posicao
     {
         public int linha { get; set; }

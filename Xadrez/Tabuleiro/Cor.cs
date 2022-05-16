@@ -1,4 +1,6 @@
-﻿namespace Xadrez.Tabuleiro
+﻿using System;
+
+namespace tabuleiro
 {
     enum Cor
     {

@@ -1,4 +1,6 @@
-﻿namespace Xadrez.Tabuleiro
+﻿using tabuleiro;
+
+namespace tabuleiro
 {
     internal class Peca
     {
