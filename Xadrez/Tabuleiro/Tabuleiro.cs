@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using tabuleiro;
 
 namespace tabuleiro
@@ -9,10 +8,6 @@ namespace tabuleiro
         public int linhas { get; set; }
         public int colunas { get; set; }
         private Peca[,] pecas;
-
-        public Tabuleiro()
-        {
-        }
 
         public Tabuleiro(int linhas, int colunas)
         {
