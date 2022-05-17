@@ -1,20 +1,17 @@
-﻿using tabuleiro;
+﻿using System;
+using tabuleiro;
 using xadrez;
 
-namespace Xadrez
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            try
-            {
+namespace xadrez_console {
+    class Program {
+        static void Main(string[] args) {
+
+            try {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
-                while (!partida.terminada)
-                {
-                    try
-                    {
+                while (!partida.terminada) {
+
+                    try {
                         Console.Clear();
                         Tela.imprimirPartida(partida);
 
@@ -35,25 +32,18 @@ namespace Xadrez
 
                         partida.realizaJogada(origem, destino);
                     }
-
-                    catch (TabuleiroException e)
-                    {
+                    catch (TabuleiroException e) {
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
-
                     }
-
                 }
 
             }
-            catch (TabuleiroException e)
-            {
+            catch (TabuleiroException e) {
                 Console.WriteLine(e.Message);
             }
 
-
+            Console.ReadLine();
         }
     }
 }
-
-
